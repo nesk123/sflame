@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>STUMBLE FLAME</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom colors for orange and black theme */
+    :root {
+      --orange: #ff6600;
+      --black: #000000;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--black);
+      color: var(--orange);
+    }
+    a {
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #fff;
+    }
+    .btn-primary {
+      background-color: var(--orange);
+      color: var(--black);
+      font-weight: 700;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.375rem;
+      box-shadow: 0 4px 6px rgba(255, 102, 0, 0.4);
+      transition: background-color 0.3s ease, color 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-transform: uppercase;
+    }
+    .btn-primary:hover {
+      background-color: var(--black);
+      color: var(--orange);
+      box-shadow: 0 6px 8px rgba(255, 102, 0, 0.7);
+    }
+    .btn-secondary {
+      border: 2px solid var(--orange);
+      color: var(--orange);
+      font-weight: 700;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.375rem;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .btn-secondary:hover {
+      background-color: var(--orange);
+      color: var(--black);
+    }
+    header {
+      border-bottom: 2px solid var(--orange);
+    }
+    .feature-card {
+      background-color: rgba(255, 102, 0, 0.1);
+      border: 1px solid var(--orange);
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      transition: background-color 0.3s ease;
+    }
+    .feature-card:hover {
+      background-color: rgba(255, 102, 0, 0.3);
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen">
+  <header class="container mx-auto flex justify-between items-center py-6 px-4 md:px-0">
+    <h1 class="text-4xl font-extrabold uppercase tracking-wide">STUMBLE FLAME</h1>
+    <nav class="uppercase font-semibold text-lg flex space-x-6">
+      <a href="https://www.mediafire.com/file/j3wg3haodlkoj1p/elim+pc.rar/file" target="_blank" rel="noopener" class="btn-primary transition duration-300 ease-in-out transform active:scale-95 active:opacity-70">
+        Baixe Agora
+      </a>
+      <a href="developers.html" class="btn-secondary transition duration-300 ease-in-out transform active:scale-95 active:opacity-70">
+        Developers
+      </a>
+    </nav>
+  </header>
+
+  <main class="container mx-auto flex-grow px-4 md:px-0 py-12">
+    <section class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-5xl font-extrabold mb-6">Welcome to STUMBLE FLAME</h2>
+      <p class="text-xl leading-relaxed mb-8">
+        A private version of the popular game Stumble Guys with exclusive features and a premium experience.
+      </p>
+      <div class="space-x-6">
+        <a href="https://www.mediafire.com/file/j3wg3haodlkoj1p/elim+pc.rar/file" target="_blank" rel="noopener" class="btn-primary">
+          <i class="fas fa-download"></i> Download Now
+        </a>
+      <a href="developers.html" class="btn-secondary">Developers</a>
+      </div>
+    </section>
+
+    <section id="features" class="max-w-5xl mx-auto mb-20">
+      <h3 class="text-3xl font-bold uppercase mb-8 border-b-2 border-orange pb-3">Exclusive Features</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-orange">
+        <div class="feature-card">
+          <h4 class="text-2xl font-semibold mb-3">Optimized Performance</h4>
+          <p>Experience the game with exclusive performance improvements and optimizations.</p>
+        </div>
+        <div class="feature-card">
+          <h4 class="text-2xl font-semibold mb-3">Advanced Customization</h4>
+          <p>Exclusive custom options to personalize your gameplay.</p>
+        </div>
+        <div class="feature-card">
+          <h4 class="text-2xl font-semibold mb-3">Frequent Updates</h4>
+          <p>Receive regular updates with new features, fixes, and improvements.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="text-center max-w-3xl mx-auto">
+      <h3 class="text-3xl font-bold uppercase mb-6 border-b-2 border-orange pb-3">Ready to Play?</h3>
+      <p class="mb-8">Download STUMBLE FLAME now and enjoy exclusive features!</p>
+      <a href="https://www.mediafire.com/file/j3wg3haodlkoj1p/elim+pc.rar/file" target="_blank" rel="noopener" class="btn-primary text-xl px-10 py-4">
+        Download STUMBLE FLAME
+      </a>
+    </section>
+  </main>
+
+  <footer class="bg-black border-t-2 border-orange py-8 text-center text-orange">
+    <a href="https://discord.gg/PVkEn78qSa" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-3 bg-orange text-black font-bold py-3 px-6 rounded shadow hover:bg-black hover:text-orange transition uppercase mb-4 mx-auto max-w-xs">
+      <i class="fab fa-discord fa-lg"></i> Join Discord
+    </a>
+    <p class="text-sm">&copy; 2024 STUMBLE FLAME. All rights reserved.</p>
+  </footer>
+</body>
+</html>
